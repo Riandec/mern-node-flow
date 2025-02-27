@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #F1F0E9;
+}
+
+/* Navbar */
+
+.Navbar {
+  color: #ffffff;
+  background-color: #3D3D3D;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar__menu ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+}
+
+.Navbar__menu img {
+  width: 35px;
+}
+
+.Navbar__title {
+  text-align: center;
+  flex-grow: 1;
+  font-size: 26px;
+  font-weight: bold;
+  padding-right: 130px;
+}
+
+/* Input */
+
+.Input {
+  background: #ffffff;
+  padding: 30px 75px 60px 50px;
+  margin: 80px auto;
+  width: fit-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.Input__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.SendContainer {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* gap Send to: and img */
+}
+
+.SendOptions {
+  display: flex;
+  gap: 20px; /* gap of each img */
+}
+
+.SendOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.SendOption img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.SendOption span {
+  font-size: 12px;
+  color: grey;
+  margin-top: 5px;
+}
+
+.Input label, p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Input input {
+  margin-left: 10px;
+  padding: 10px;
+  width: 260px;
+}
+
+.IO__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Side__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Node input */
+
+.Node__input {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 160px;
+  height: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.NodeHead__input {
+  background: #9CD85B;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.NodeHead__input img, 
+.NodeHead__line img,
+.NodeHead__facebook img,
+.NodeHead__discord img,
+.NodeHead__output img {
+  width: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.NodeBody {
+  background: #eaeaea;
+  height: 100px;
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.Node__output {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 160px;
+  height: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.Node__embed, .Node__http, .Node__transform, .Node__topublish {
+  background: #FFD65A;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Node__embed img,
+.Node__http img, 
+.Node__transform img, 
+.Node__topublish img {
+  width: 25px;
+}
+
+.Node__embed img[alt="zoom"],
+.Node__http img[alt="zoom"],
+.Node__transform img[alt="zoom"],
+.Node__topublish img[alt="zoom"]{
+  cursor: pointer;
+  width: 20px;
+}
+
+/* Line */
+
+.Line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 140px;
+  gap: 140px; /* gap Line__container and Line__embed*/
+  position: relative;
+}
+
+.NodeHead__line {
+  background: #06C755;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Facebook */
+
+.Facebook {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 140px;
+  gap: 140px;
+  position: relative;
+}
+
+.NodeHead__facebook {
+  background: #1877F2;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Discord */
+
+.Discord {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 140px;
+  gap: 140px;
+  position: relative;
+}
+
+.NodeHead__discord {
+  background: #7289DA;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Output */
+
+.Output {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 140px;
+  gap: 140px;
+  position: relative;
+}
+
+.NodeHead__output {
+  background: #64CEFF;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Edge */
+.Edge__svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.Edge__svg line {
+  stroke: black;
+  stroke-width: 1;
+}
+
+.Node__input, 
+.Node__embed, 
+.Node__http, 
+.Node__transform, 
+.Node__topublish, 
+.Node__output {
+  position: relative;
+  z-index: 1;
+}
+
+/* Button */
+
+.Button__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Button__reset {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #3D3D3D; 
+  color: #ffffff; 
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Button__reset:hover {
+  color: #FFD65A;
+}
+
+/* Each node info */
+
+.ZoomBox {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  left: 590px;
+  top: 20px;
+}
+
+.ZoomBox p {
+  margin: 8px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #bababa;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.ZoomBox p:last-child {
+  border-bottom: none;
+}
