@@ -9,7 +9,7 @@ Rawdata link: https://storage.googleapis.com/maoz-event/rawdata.txt
 สามารถรันเว็บไซต์ด้วยคำสั่งนี้ สำหรับเริ่มต้นเซิร์ฟเวอร์ในโหมดการพัฒนา เข้าถึงผ่าน browser ที่ localhost
 >npm run dev
 
-
+<br>
 ภาพตัวอย่างหน้าเว็บไซต์
 <img src="screenshots/Screenshot Input.png">
 
