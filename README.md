@@ -1,4 +1,6 @@
 # Practice MERN Stack - Simple nodes-edges flow website
+MERN Stack > MongoDB, Express, React, Node.js <br>
+
 Folders ที่แนบมา
 1) nodeflow-website - เว็บไซต์แสดงเส้นทางการไหลและการส่งข้อมูลของแต่ละโหนด ตั้งแต่โหนดต้นทางจนถึงปลายทาง <br>
 2) rawdata-api - ฝึกฝนการเขียนโค้ดส่งข้อมูลเข้า MongoDB Atlas เท่านั้น
